@@ -25,7 +25,7 @@ body {
     align-items: center;
   }
   
-/* Header */
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -50,7 +50,7 @@ body {
   margin: 0;
 }
 
-/* Form container */
+
 .form-container {
     max-width: 650px;
     flex-grow: 1;
