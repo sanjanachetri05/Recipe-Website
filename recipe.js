@@ -127,7 +127,6 @@ function goBack() {
     setTimeout(() => window.history.back(), 300);
 }
 
-// Dropdown logic
 function toggleDropdown() {
     const dropdown = document.getElementById("accountDropdown");
     dropdown.classList.toggle("show");
@@ -140,7 +139,7 @@ window.addEventListener("click", function (event) {
     }
 });
 
-// Logout
+
 function logout() {
     localStorage.removeItem("username");
     localStorage.removeItem("token");
