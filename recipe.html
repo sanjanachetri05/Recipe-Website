@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Full Recipe</title>
+    <link rel="stylesheet" href="recipe.css" />
+</head>
+<body class="recipe-page">
+    <!-- Header with dropdown -->
+<div class="header">
+    <h1 class="logo">My Recipes</h1>
+    <div class="account">
+      <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Account" class="account-icon" onclick="toggleDropdown()" />
+      <div class="dropdown" id="accountDropdown">
+        <p id="dropdownUsername"><strong>Username</strong></p>
+        <hr />
+        <p onclick="location.href='home.html'">Home</p>
+        <p onclick="location.href='favourite.html'">Favourites</p>
+        <p onclick="location.href='history.html'">History</p>
+        <p onclick="logout()">Logout</p>
+      </div>
+    </div>
+  </div>
+  
+    
+    <div class="main-content">
+        <h2 id="mealTitle" class="dish-name"></h2>
+
+        <div class="top-section">
+            <div class="card image-card">
+                <img id="mealImage" src="" alt="Dish Image" />
+            </div>
+
+            <div class="card ingredients-card">
+                <h3>Ingredients</h3>
+                <ul id="mealIngredients"></ul>
+            </div>
+        </div>
+
+        <div class="card instructions-card">
+            <h3>Instructions</h3>
+            <p id="mealInstructions"></p>
+        </div>
+
+        <div style="text-align: center;">
+            <button id="favButton" onclick="toggleFavourite()">Add to Favourites</button><p>      </p>
+            <button onclick="goBack()">Go Back</button>
+        </div>
+    </div>
+
+    <script src="recipe.js"></script>
+</body>
+</html>

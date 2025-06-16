@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>History</title>
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+  <!-- Header with dropdown -->
+  <div class="header">
+    <h1 class="logo">My Recipes</h1>
+    <div class="account">
+      <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Account" class="account-icon" onclick="toggleDropdown()" />
+      <div class="dropdown" id="accountDropdown">
+        <p id="dropdownUsername"><strong>Username</strong></p>
+        <hr />
+        <p onclick="location.href='home.html'">Home</p>
+        <p onclick="location.href='favourite.html'">Favourites</p>
+        <p onclick="location.href='history.html'">History</p>
+        <p onclick="logout()">Logout</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- History -->
+  <h1>Your Viewed Recipes</h1>
+  <div id="historyResults" class="grid-container"></div>
+
+  <!-- Link JS -->
+  <script src="history.js"></script>
+</body>
+</html>

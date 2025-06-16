@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Consolas&display=swap');
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('https://images.pexels.com/photos/3026802/pexels-photo-3026802.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  z-index: -1;
+}
+
+body {
+    font-family: 'Consolas', monospace;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(255, 127, 80, 0.623);
+  backdrop-filter: blur(10px);
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+  margin: 0;
+}
+
+/* Form container */
+.form-container {
+    max-width: 650px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 70px; /* Push content below fixed header */
+    z-index: 2;
+  }
+  
+
+  .card {
+    width: 100%; /* full width of container */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 40px;
+  }
+
+.card-body label {
+  color: white;
+}
+
+.card-body .form-control {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+}
+
+.card-body .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.card-body .form-control:focus {
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.btn-primary {
+  background-color: coral;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #ff8150;
+}

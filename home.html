@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Recipes</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1 class="logo">My Recipes</h1>
+        <div class="account">
+            <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Account" class="account-icon" onclick="toggleDropdown()" />
+            <div class="dropdown" id="accountDropdown">
+                <p id="dropdownUsername"><strong>Username</strong></p>
+                <hr />
+                <p onclick="location.href='home.html'">Home</p>
+                <p onclick="location.href='favourite.html'">Favourites</p>
+                <p onclick="location.href='history.html'">History</p>
+                <p onclick="logout()">Logout</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search -->
+    <div class="search-container">
+        <div class="search-box">
+            <input type="text" id="searchBar" placeholder="Search for a dish..." oninput="toggleClearButton()" onkeypress="handleKeyPress(event)">
+            <span id="clearBtn" class="clear-btn" onclick="clearSearch()">×</span>
+            <button onclick="searchRecipes()">Search</button>
+        </div>
+    </div>
+
+    <div class="separator"></div>
+
+    <!-- Results -->
+    <div id="results" class="grid-container"></div>
+
+    <!-- Scripts -->
+    <script src="home.js"></script>
+    <script>
+      // For Enter key handling globally
+      function handleKeyPress(e) {
+        if (e.key === 'Enter') {
+          searchRecipes();
+        }
+      }
+    </script>
+</body>
+</html>
