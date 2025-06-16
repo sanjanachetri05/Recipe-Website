@@ -77,7 +77,7 @@ function loadHistory(userId) {
         });
 }
 
-// View recipe
+
 function viewRecipe(mealId, mealName, mealThumb) {
     const userId = localStorage.getItem("user_id");
     if (userId) {
@@ -91,7 +91,7 @@ function viewRecipe(mealId, mealName, mealThumb) {
     window.location.href = `recipe.html?id=${mealId}`;
 }
 
-// Toggle favourite
+
 function toggleFavourite(event, mealId, mealName, mealThumb) {
     event.stopPropagation();
 
@@ -133,7 +133,6 @@ function toggleFavourite(event, mealId, mealName, mealThumb) {
     }
 }
 
-// Account dropdown
 function toggleDropdown() {
     const dropdown = document.getElementById("accountDropdown");
     dropdown.classList.toggle("show");
@@ -146,7 +145,7 @@ window.addEventListener("click", (e) => {
     }
 });
 
-// Logout
+
 function logout() {
     localStorage.removeItem("username");
     localStorage.removeItem("token");
