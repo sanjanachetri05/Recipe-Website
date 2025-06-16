@@ -102,7 +102,7 @@ app.post("/forgot-password", async (req, res) => {
   }
 });
 
-// Add to History
+
 app.post("/add-to-history", async (req, res) => {
   try {
     const { userId, mealId, mealName, mealThumb } = req.body;
@@ -120,7 +120,7 @@ app.post("/add-to-history", async (req, res) => {
   }
 });
 
-// Get User History
+
 app.get("/history/:userId", async (req, res) => {
   try {
     const user = await User.findById(req.params.userId).select("-password");
@@ -133,7 +133,7 @@ app.get("/history/:userId", async (req, res) => {
   }
 });
 
-// Add to Favourites
+
 app.post("/add-favourite", async (req, res) => {
   try {
     const { userId, mealId, mealName, mealThumb } = req.body;
