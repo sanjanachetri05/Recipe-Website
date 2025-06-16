@@ -36,7 +36,7 @@ body.recipe-page {
   margin: 0;
 }
 
-/* Account Icon */
+
 .account {
   position: relative;
 }
@@ -51,7 +51,7 @@ body.recipe-page {
   object-fit: cover;
 }
 
-/* Dropdown Menu */
+
 .dropdown {
   display: none;
   position: absolute;
@@ -82,7 +82,7 @@ body.recipe-page {
   display: block;
 }
 
-/* Main content layout */
+
 .main-content {
   max-width: 1200px;
   margin: 100px auto 0 auto;
@@ -113,7 +113,7 @@ body.recipe-page {
   margin-bottom: 30px;
 }
 
-/* Image Card */
+
 .image-card {
   flex: 1;
   max-width: 500px;
@@ -135,7 +135,7 @@ body.recipe-page {
   display: block;
 }
 
-/* Ingredients Card */
+
 .ingredients-card {
   flex: 1;
   max-width: 500px;
@@ -157,7 +157,7 @@ body.recipe-page {
   border-bottom: 1px solid #ccc;
 }
 
-/* Instructions Card */
+
 .instructions-card {
   background: rgba(255, 127, 80, 0.096);
   padding: 25px;
@@ -170,7 +170,7 @@ body.recipe-page {
   border: 2px solid black;
 }
 
-/* Button */
+
 button {
   display: block;
   margin: 0 auto;
