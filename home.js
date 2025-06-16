@@ -1,5 +1,5 @@
 let lastFetchedMeals = [];
-let favouriteMealIds = new Set(); // holds all favourite meal IDs
+let favouriteMealIds = new Set(); // holds all fav meal id
 
 document.addEventListener("DOMContentLoaded", function () {
     const userId = localStorage.getItem("user_id");
