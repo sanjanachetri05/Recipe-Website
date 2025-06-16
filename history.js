@@ -1,4 +1,4 @@
-let favouriteMealIds = new Set(); // holds favourite meal IDs
+let favouriteMealIds = new Set(); // holds fav-meal id
 
 document.addEventListener("DOMContentLoaded", () => {
     const usernameDisplay = document.getElementById("dropdownUsername");
@@ -16,12 +16,12 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
-    // Step 1: Fetch favourites first
+    //  Fetch fav
     fetch(`http://localhost:5000/favourites/${userId}`)
         .then(res => res.json())
         .then(favourites => {
             favouriteMealIds = new Set(favourites.map(fav => fav.mealId));
-            // Step 2: Then load history
+            //  loads history
             loadHistory(userId);
         })
         .catch(err => {
