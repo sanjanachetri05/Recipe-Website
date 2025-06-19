@@ -70,31 +70,31 @@ PORT=5000
 node server.js
 ```
 
-5. Open the app in browser
+5. **Open the app in browser**
 Open `login.html` or `home.html` in your browser manually.
 
 ---
 
-📡 API Routes Summary
+## 📡 API Routes Summary
 
  🔐 Authentication
 - `POST /signup` – Register
 - `POST /signin` – Login
 - `POST /forgot-password` – Reset password
 
-❤️ Favourites
+## ❤️ Favourites
 - `POST /add-favourite` – Add a favourite
 - `POST /remove-favourite` – Remove favourite
 - `GET /favourites/:userId` – Get all favourites
 - `POST /is-favourite` – Check if a recipe is favourited
 
- 📜 History
+ ## 📜 History
 - `POST /add-to-history` – Add recipe to history
 - `GET /history/:userId` – Get recipe history
 
 ---
 
-📈 Future Enhancements
+## 📈 Future Enhancements
 
 - AI-based recipe suggestions
 - Meal planning dashboard
